@@ -1,19 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>disable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Matías Gabriel Katz</Authors>
     <Title>MGK.Cryptography</Title>
-    <Version>1.1.0</Version>
-    <Description>A library to manage encryption and decryption of texts.</Description>
-    <Copyright>Copyright 2020,2021,2022 (c) Matías Gabriel Katz</Copyright>
+    <Version>1.2.0</Version>
+    <Description>A library to manage encryption and decryption of strings.</Description>
+    <Copyright>Copyright 2020,2021,2022,2023 (c) Matías Gabriel Katz</Copyright>
     <PackageProjectUrl>https://www.nuget.org/packages/MGK.Cryptography</PackageProjectUrl>
     <RepositoryUrl>https://github.com/mgkatz/MGK.Cryptography</RepositoryUrl>
     <PackageTags>cryptography;encryption;decryption;aes</PackageTags>
-    <PackageReleaseNotes>Source code migrated from .NET Standard 2.0 to .NET 6.0.</PackageReleaseNotes>
+    <PackageReleaseNotes>Source code migrated from .NET 7.0.</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <RepositoryType>git</RepositoryType>
@@ -27,8 +27,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MGK.Acceptance" Version="1.1.2" />
-    <PackageReference Include="MGK.Extensions" Version="1.1.1" />
+    <PackageReference Include="MGK.Acceptance" Version="1.2.0" />
+    <PackageReference Include="MGK.Extensions" Version="1.2.0" />
   </ItemGroup>
 
 </Project>

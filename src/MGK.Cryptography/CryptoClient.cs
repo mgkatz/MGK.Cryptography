@@ -23,7 +23,7 @@ public class CryptoClient : ICryptoClient
     /// </summary>
     /// <param name="cryptoItem">The encrypted object.</param>
     /// <returns>A response containing the decrypted value.</returns>
-    public ICryptoResponse Decrypt(ICryptoItem cryptoItem)
+    public virtual ICryptoResponse Decrypt(ICryptoItem cryptoItem)
         => new CryptoResponse(GetDecryptedValue(cryptoItem));
 
     /// <summary>
@@ -43,7 +43,7 @@ public class CryptoClient : ICryptoClient
     /// </summary>
     /// <param name="textToEncrypt">The text to encrypt.</param>
     /// <returns>An encrypted object.</returns>
-    public ICryptoItem Encrypt(string textToEncrypt)
+    public virtual ICryptoItem Encrypt(string textToEncrypt)
     {
         Ensure.Parameter.IsNotNullNorEmptyNorWhiteSpace(textToEncrypt, nameof(textToEncrypt));
 
